@@ -1,0 +1,52 @@
+.button {
+    &:hover {
+        background: #000;
+        border: 1px solid #fff;
+        transition: all .3s;
+        color: #fff;
+    }
+    &--header {
+        width: 155px;
+        height: 42px;
+        background: #FFFFFF;
+        border-radius: 14px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        color: #000000;
+    }
+    &--about {
+        width: 143px;
+        height: 42px;
+        background: #FFFFFF;
+        border-radius: 14px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        color: #000000;
+        img {
+            margin-right: 3px;
+        }
+    }
+    &--gear {
+        width: 152px;
+        height: 42px;
+        background: #FFFFFF;
+        border-radius: 14px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.4px;
+        img {
+            margin-right: 5px;
+        }
+    }
+}

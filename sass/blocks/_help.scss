@@ -1,0 +1,30 @@
+.help {
+    min-height: 414px;
+    background: #000;
+    &__title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 571px;
+        margin: 0 auto;
+        padding-top: 113px;
+    }
+    &__subtitle {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        color: #C0C0C0;
+        margin-top: 15px;
+    }
+    &__button {
+        margin-top: 22px;
+        text-align: center;
+    }
+}

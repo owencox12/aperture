@@ -1,0 +1,50 @@
+.header {
+    min-height: 90px;
+    background: #000;
+    position: fixed;
+    width: 100%;
+    transition: all .3s;
+    &__active {
+        background: #000;
+        transition: all .3s;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        z-index: 50;
+    }
+    &__logo {
+        cursor: pointer;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 24px;
+    }
+    &__burger {
+        display: none;
+        &_list {
+            display: none;
+        }
+    }
+    &__menu {
+        &_list {
+            display: flex;
+            align-items: center;
+            &_type {
+                margin: 0 16px;
+                a {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    &:hover {
+                        color: gray;
+                        transition: all .3s;
+                    }
+                }
+            }
+        }
+    }
+}

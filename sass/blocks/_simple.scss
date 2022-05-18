@@ -1,0 +1,36 @@
+.simple {
+    &__image {
+        width: 100%;
+        height: 600px;
+        position: relative;
+        &_img {
+            width: 100%;
+            height: 600px;
+        }
+    }
+    &__text {
+        position: absolute;
+        bottom: 40px;
+        right: 62px;
+    }
+    &__title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    &__descr {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #C0C0C0;
+        width: 298px;
+        margin-bottom: 203px;
+    }
+}

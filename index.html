@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <svg style="display: none">
+        <symbol id="twitter" viewBox="0 0 56.693 56.693">
+            <path d="M52.837,15.065c-1.811,0.805-3.76,1.348-5.805,1.591c2.088-1.25,3.689-3.23,4.444-5.592c-1.953,1.159-4.115,2-6.418,2.454  c-1.843-1.964-4.47-3.192-7.377-3.192c-5.581,0-10.106,4.525-10.106,10.107c0,0.791,0.089,1.562,0.262,2.303  c-8.4-0.422-15.848-4.445-20.833-10.56c-0.87,1.492-1.368,3.228-1.368,5.082c0,3.506,1.784,6.6,4.496,8.412  c-1.656-0.053-3.215-0.508-4.578-1.265c-0.001,0.042-0.001,0.085-0.001,0.128c0,4.896,3.484,8.98,8.108,9.91  c-0.848,0.23-1.741,0.354-2.663,0.354c-0.652,0-1.285-0.063-1.902-0.182c1.287,4.015,5.019,6.938,9.441,7.019  c-3.459,2.711-7.816,4.327-12.552,4.327c-0.815,0-1.62-0.048-2.411-0.142c4.474,2.869,9.786,4.541,15.493,4.541  c18.591,0,28.756-15.4,28.756-28.756c0-0.438-0.009-0.875-0.028-1.309C49.769,18.873,51.483,17.092,52.837,15.065z"/>
+        </symbol>
+    </svg>
+    <svg style="display: none">
+        <symbol id="instagram" viewBox="0 0 56.7 56.7">
+            <g>
+                <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+                    c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"/>
+                <circle cx="41.5" cy="16.4" r="2.9"/>
+                <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+                    h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+                    s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+                    c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"/>
+            </g>
+        </symbol>
+    </svg>
+    <svg style="display: none">
+        <symbol id="facebook" viewBox="0 0 56.693 56.693">
+            <path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"/>
+        </symbol>
+    </svg>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <img src="image/logo.png" alt="">
+                </div>
+                <div class="header__menu">
+                    <ul class="header__menu_list">
+                        <li class="header__menu_list_type"><a href="#">Business areas</a></li>
+                        <li class="header__menu_list_type"><a href="#">Featured images</a></li>
+                        <li class="header__menu_list_type"><a href="#">Gear cage</a></li>
+                        <li class="header__menu_list_type"><a href="#">Contact</a></li>
+                        <button class="button button--header">Get template</button>
+                    </ul>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <div class="header__burger_list">
+                    <ul class="header__burger_list_menu">
+                        <li class="header__burger_list_menu_type"><a href="#">Business areas</a></li>
+                        <li class="header__burger_list_menu_type"><a href="#">Featured images</a></li>
+                        <li class="header__burger_list_menu_type"><a href="#">Gear cage</a></li>
+                        <li class="header__burger_list_menu_type"><a href="#">Contact</a></li>
+                        <button class="button button--burgerHeader">Get template</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="promo">
+        <div class="container">
+            <div class="promo__title">Photographer & Filmmaker</div>
+            <div class="promo__subtitle">Aperture Studios</div>
+            <div class="promo__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</div>
+            <div class="promo__icons">
+                <div class="promo__icons_icon">
+                    <div class="promo__icons_icon_image"><img src="image/iconspromo1.png" alt=""></div>
+                    <div class="promo__icons_icon_text">1/2000s</div>
+                </div>
+                <div class="promo__icons_icon">
+                    <div class="promo__icons_icon_image"><img src="image/iconspromo2.png" alt=""></div>
+                    <div class="promo__icons_icon_text">f/11</div>
+                </div>
+                <div class="promo__icons_icon">
+                    <div class="promo__icons_icon_image"><img src="image/iconspromo3.png" alt=""></div>
+                    <div class="promo__icons_icon_text">100</div>
+                </div>
+                <div class="promo__icons_icon">
+                    <div class="promo__icons_icon_image"><img src="image/iconspromo4.png" alt=""></div>
+                    <div class="promo__icons_icon_text">Iceland</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__title">
+                What we do.
+            </div>
+            <div class="about__subtitle">
+                The areas that we're specialized in.
+            </div>
+            <div class="about__wrapper">
+                <div class="about__item">
+                    <div class="about__item_image">
+                        <img src="image/about1.png" alt="">
+                        <div class="about__item_image_text">
+                            <div class="about__item_image_title">Product Photography</div>
+                            <div class="about__item_image_descr">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</div>
+                            <button class="button button--about"><img src="image/btn.png" alt=""> Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <div class="about__item_image">
+                        <img src="image/about2.png" alt="">
+                        <div class="about__item_image_text">
+                            <div class="about__item_image_title">Product Photography</div>
+                            <div class="about__item_image_descr">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</div>
+                            <button class="button button--about"><img src="image/btn.png" alt=""> Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <div class="about__item_image">
+                        <img src="image/about3.png" alt="">
+                        <div class="about__item_image_text">
+                            <div class="about__item_image_title">Product Photography</div>
+                            <div class="about__item_image_descr">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</div>
+                            <button class="button button--about"><img src="image/btn.png" alt=""> Read more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <div class="about__item_image">
+                        <img src="image/about4.png" alt="">
+                        <div class="about__item_image_text">
+                            <div class="about__item_image_title">Product Photography</div>
+                            <div class="about__item_image_descr">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</div>
+                            <button class="button button--about"><img src="image/btn.png" alt=""> Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="simple">
+        <div class="simple__image">
+            <img src="image/simpleBg1.png" class="simple__image_img" alt="">
+            <div class="container">
+                <div class="simple__text">
+                    <div class="simple__title">Sunset at Mount Fuji</div>
+                    <div class="simple__descr">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</div>
+                    <div class="promo__icons">
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo1.png" alt=""></div>
+                            <div class="promo__icons_icon_text">1/2000s</div>
+                        </div>
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo2.png" alt=""></div>
+                            <div class="promo__icons_icon_text">f/11</div>
+                        </div>
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo3.png" alt=""></div>
+                            <div class="promo__icons_icon_text">100</div>
+                        </div>
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo4.png" alt=""></div>
+                            <div class="promo__icons_icon_text">Iceland</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gear">
+        <div class="gear__wrapper">
+            <div class="gear__item gear__item_first">
+                <div class="gear__item_block gear__item_block_text">
+                    <div class="gear__item_block_title">The Gear cage</div>
+                    <div class="gear__item_block_subtitle">The tools that we use.</div>
+                    <div class="gear__item_block_descr">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</div>
+                    <div class="gear__item_block_button">
+                        <button class="button button--gear"><img src="image/btn.png" alt="">Check it out</button>
+                    </div>
+                </div>
+            </div>
+            <div class="gear__item">
+                <div class="gear__item_block">
+                    <img src="image/gearimg.png" class="gear__item_block_image" alt="">
+                    <div class="gear__item_block_icon">
+                        <div class="promo__icons">
+                            <div class="promo__icons_icon">
+                                <div class="promo__icons_icon_image"><img src="image/iconspromo1.png" alt=""></div>
+                                <div class="promo__icons_icon_text">1/2000s</div>
+                            </div>
+                            <div class="promo__icons_icon">
+                                <div class="promo__icons_icon_image"><img src="image/iconspromo2.png" alt=""></div>
+                                <div class="promo__icons_icon_text">f/11</div>
+                            </div>
+                            <div class="promo__icons_icon">
+                                <div class="promo__icons_icon_image"><img src="image/iconspromo3.png" alt=""></div>
+                                <div class="promo__icons_icon_text">100</div>
+                            </div>
+                            <div class="promo__icons_icon">
+                                <div class="promo__icons_icon_image"><img src="image/iconspromo4.png" alt=""></div>
+                                <div class="promo__icons_icon_text">Iceland</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="simple">
+        <div class="simple__image">
+            <img src="image/simpleBg2.png" class="simple__image_img" alt="">
+            <div class="container">
+                <div class="simple__text">
+                    <div class="simple__title">Sunset at Mount Fuji</div>
+                    <div class="simple__descr">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</div>
+                    <div class="promo__icons">
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo1.png" alt=""></div>
+                            <div class="promo__icons_icon_text">1/2000s</div>
+                        </div>
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo2.png" alt=""></div>
+                            <div class="promo__icons_icon_text">f/11</div>
+                        </div>
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo3.png" alt=""></div>
+                            <div class="promo__icons_icon_text">100</div>
+                        </div>
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo4.png" alt=""></div>
+                            <div class="promo__icons_icon_text">Iceland</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sponsors">
+        <div class="container">
+            <div class="sponsors__title">Past clients</div>
+            <div class="sponsors__subtitle">Trusted by your favourite companies</div>
+            <div class="sponsors__wrapper">
+                <div class="sponsors__item">
+                    <div class="sponsors__item_image">
+                        <img src="image/sponsors1.png" alt="">
+                    </div>
+                </div>
+                <div class="sponsors__item">
+                    <div class="sponsors__item_image">
+                        <img src="image/sponsors2.png" height="50px" alt="">
+                    </div>
+                </div>
+                <div class="sponsors__item">
+                    <div class="sponsors__item_image">
+                        <img src="image/sponsors3.png" alt="">
+                    </div>
+                </div>
+                <div class="sponsors__item">
+                    <div class="sponsors__item_image">
+                        <img src="image/sponsors4.png" alt="">
+                    </div>
+                </div>
+                <div class="sponsors__item">
+                    <div class="sponsors__item_image">
+                        <img src="image/sponsors5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="simple">
+        <div class="simple__image">
+            <img src="image/simpleBg3.png" class="simple__image_img" alt="">
+            <div class="container">
+                <div class="simple__text">
+                    <div class="simple__title">Sunset at Mount Fuji</div>
+                    <div class="simple__descr">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</div>
+                    <div class="promo__icons">
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo1.png" alt=""></div>
+                            <div class="promo__icons_icon_text">1/2000s</div>
+                        </div>
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo2.png" alt=""></div>
+                            <div class="promo__icons_icon_text">f/11</div>
+                        </div>
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo3.png" alt=""></div>
+                            <div class="promo__icons_icon_text">100</div>
+                        </div>
+                        <div class="promo__icons_icon">
+                            <div class="promo__icons_icon_image"><img src="image/iconspromo4.png" alt=""></div>
+                            <div class="promo__icons_icon_text">Iceland</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="help">
+        <div class="container">
+            <div class="help__title">Need help with photography or videography?</div>
+            <div class="help__subtitle">We're here for you!</div>
+            <div class="help__button">
+                <button class="button button--gear"><img src="image/btn.png" alt="">Get in touch</button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <div class="footer__item_logo">
+                        <img src="image/logo.png" alt="">
+                    </div>
+                    <div class="footer__item_text">
+                        Photographers & videographers capturing the world around us.
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item_menu">
+                        <ul class="footer__item_menu_list">
+                            <div class="footer__item_menu_title">Business areas</div>
+                            <li class="footer__item_menu_list_type"><a href="#">Product Photography</a></li>
+                            <li class="footer__item_menu_list_type"><a href="#">Architecture Photography</a></li>
+                            <li class="footer__item_menu_list_type"><a href="#">Drone Photography</a></li>
+                            <li class="footer__item_menu_list_type"><a href="#">Wildlife Photography</a></li>
+                        </ul>
+                        <ul class="footer__item_menu_list">
+                            <div class="footer__item_menu_title">Pages</div>
+                            <li class="footer__item_menu_list_type"><a href="#">Gear cage</a></li>
+                            <li class="footer__item_menu_list_type"><a href="#">Featured images</a></li>
+                            <li class="footer__item_menu_list_type"><a href="#">Contact</a></li>
+                            <li class="footer__item_menu_list_type"><a href="#">Style guide</a></li>
+                            <li class="footer__item_menu_list_type"><a href="#">Instructions</a></li>
+                            <li class="footer__item_menu_list_type"><a href="#">Changelog</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__wrapper_second">
+                <div class="footer__item footer__item_third">
+                    <div class="footer__item_title">
+                        Subscribe to our newsletter
+                    </div>
+                    <div class="footer__item_text">
+                        Read about all the things we do.
+                    </div>
+                </div>
+                <div class="footer__item footer__item_third">
+                    <form action="#" class="footer__item_form">
+                        <input type="text">
+                    </form>
+                </div>
+        </div>
+        <div class="footer__wrapper_third">
+            <div class="footer__item">
+                <div class="footer__item_descr">
+                    © Aperture Photography, Inc. All rights reserved.Licensing.
+                </div>
+            </div>
+            <div class="footer__item">
+                <div class="footer__item_socials">
+                    <div class="footer__item_socials_social">
+                        <svg><use xlink:href="#twitter"></use></svg>
+                    </div>
+                    <div class="footer__item_socials_social">
+                        <svg><use xlink:href="#instagram"></use></svg>
+                    </div>
+                    <div class="footer__item_socials_social">
+                        <svg><use xlink:href="#facebook"></use></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
